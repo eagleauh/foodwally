@@ -215,13 +215,7 @@
 						<div style="padding-left:10px;"><img  data-lazy="../live.staticflickr.com/65535/49860092852_6cba6ef0ba_c.jpg"></div>
 						 <div style="padding-left:10px;"><a href="ncHome.html"><img data-lazy="../live.staticflickr.com/65535/49859244963_f034b18149_c.jpg"></a></div>
 						
-				 <!--	   
-				 		<div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/breakthechain.jpg"></div>
-				 	    <div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/cl_extend.jpg"></div>
-						 <div style="padding-left:10px;"><a href="http://pg.kseb.in/ui/gc.php" target="_blank"><img data-lazy="/selfservices/resources/Images/banner/banner_03.jpg"></a></div>
-						<div style="padding-left:10px;"><img  data-lazy="/selfservices/resources/Images/banner/1912_2.jpg"></div>
-					     <div style="padding-left:10px;"><a href="https://play.google.com/store/apps/details?id=com.mobile.kseb" target="_blank"><img data-lazy="/selfservices/resources/Images/banner/mobile_app.jpg" ></a></div>
--->
+				
 					  </div>
 					
 			</div>
@@ -249,43 +243,7 @@
 	
 	
 			
-	<script>
-	$(document).ready(function() {
 
-		 function getUniqueId(){
-			 $.ajax({
-				 
-					type : "POST",
-					url : "getUniqueId",
-					data : {	
-					},
-					success : function(uniqueId) {			
-						var temp = "/selfservices/simpleImg.image";
-						var uniqueId = new Date().getTime();
-						uniqueId = uniqueId+ Math.floor(Math.random() * 10000) + 10000;
-						$("#Vimage").attr("src",temp+"?uniqId="+ uniqueId);
-						document.getElementById("signin-password").value = "";						
-						$("#captchaUniqueIdHidden").val(uniqueId);
-					},
-					error : function(e) {
-					}
-				});
-		 }	 
-		 getUniqueId();
-		 	 
-   });
-	
-	function changeCaptha(){
-	
-		var temp = "/selfservices/simpleImg.image";
-		var uniqueId = new Date().getTime();
-		uniqueId = uniqueId+ Math.floor(Math.random() * 10000) + 10000;
-		$("#Vimage").attr("src",temp+"?uniqId="+ uniqueId);
-		document.getElementById("signin-password").value = "";
-		$("#captchaUniqueIdHidden").val(uniqueId);
-	}
-	
-</script>
 	
 
 	
